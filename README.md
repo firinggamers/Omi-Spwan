@@ -4,7 +4,7 @@ HTML & CSS Reworked For
 qb-spawn 
 
 Step 1 
-open your Full Resources Folder and find "qb-spawn" and Replace Everything to "Omi-spawn" 
+open your Full Resources Folder and find "qb-spawn" and Replace Everything to "qb-spawn" 
 Dont change the Folder name
 (Dont Change The Name Wont Work)
 

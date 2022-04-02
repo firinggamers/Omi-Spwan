@@ -1,4 +1,4 @@
-# Omi-spawn
+# qb-spawn
 Spawn Selector for QB-Core Framework :eagle:
 
 # License
@@ -35,11 +35,11 @@ Spawn Selector for QB-Core Framework :eagle:
 ## Installation
 ### Manual
 - Download the script and put it in the `[qb]` directory.
-- Import `Omi-spawn.sql` in your database
+- Import `qb-spawn.sql` in your database
 - Add the following code to your server.cfg/resouces.cfg
 ```
 ensure qb-core
-ensure Omi-spawn
+ensure qb-spawn
 ensure qb-apartmen
 ensure qb-garages
 ```

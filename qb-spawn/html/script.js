@@ -150,7 +150,7 @@ $(document).on('click', '.nav__slide:not(.nav-active)', function() {
         $("#submit-spawn").attr("data-location", arrCities[curSlide - 1]);
         $("#submit-spawn").attr("data-type", arrType[curSlide - 1]);
         $("#submit-spawn").fadeIn(100);
-        $.post('https://Omi-spawn/setCam', JSON.stringify({
+        $.post('https://qb-spawn/setCam', JSON.stringify({
             posname: arrCities[curSlide - 1],
             type: arrType[curSlide - 1],
         }));
@@ -170,12 +170,12 @@ $(document).on('click', '#submit-spawn', function(evt) {
     $("li").remove(".nav__slide");
 
     if (spawnType !== "appartment") {
-        $.post('https://Omi-spawn/spawnplayer', JSON.stringify({
+        $.post('https://qb-spawn/spawnplayer', JSON.stringify({
             spawnloc: location,
             typeLoc: spawnType
         }));
     } else {
-        $.post('https://Omi-spawn/chooseAppa', JSON.stringify({
+        $.post('https://qb-spawn/chooseAppa', JSON.stringify({
             appType: location,
         }));
     }
@@ -241,7 +241,7 @@ function setupLocations(locations, myHouses) {
             $("#submit-spawn").attr("data-location", arrCities[curSlide - 1]);
             $("#submit-spawn").attr("data-type", arrType[curSlide - 1]);
             $("#submit-spawn").fadeIn(100);
-            $.post('https://Omi-spawn/setCam', JSON.stringify({
+            $.post('https://qb-spawn/setCam', JSON.stringify({
                 posname: arrCities[curSlide - 1],
                 type: arrType[curSlide - 1],
             }));
@@ -290,7 +290,7 @@ function setupApps(apps) {
         $("#submit-spawn").attr("data-location", arrCities[curSlide - 1]);
         $("#submit-spawn").attr("data-type", "appartment");
         $("#submit-spawn").fadeIn(100);
-        $.post('https://Omi-spawn/setCam', JSON.stringify({
+        $.post('https://qb-spawn/setCam', JSON.stringify({
             posname: arrCities[curSlide - 1],
             type: "appartment",
         }));

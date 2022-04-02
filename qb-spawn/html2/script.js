@@ -35,7 +35,7 @@ $(document).on('click', '.location', function(evt){
         $("#submit-spawn").attr("data-location", location);
         $("#submit-spawn").attr("data-type", type);
         $("#submit-spawn").fadeIn(100)
-        $.post('https://Omi-spawn/setCam', JSON.stringify({
+        $.post('https://qb-spawn/setCam', JSON.stringify({
             posname: location,
             type: type,
         }));
@@ -56,12 +56,12 @@ $(document).on('click', '#submit-spawn', function(evt){
         $(".hideContainer").removeClass("hideContainer");
     }, 900);
     if (spawnType !== "appartment") {
-        $.post('https://Omi-spawn/spawnplayer', JSON.stringify({
+        $.post('https://qb-spawn/spawnplayer', JSON.stringify({
             spawnloc: location,
             typeLoc: spawnType
         }));
     } else {
-        $.post('https://Omi-spawn/chooseAppa', JSON.stringify({
+        $.post('https://qb-spawn/chooseAppa', JSON.stringify({
             appType: location,
         }));
     }
